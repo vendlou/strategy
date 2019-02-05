@@ -1,5 +1,7 @@
 # Strategy Pattern
 
+> Author: Jimmy Tran, Brian Crites ([@brrcrites](https://github.com/brrcrites))
+
 In this lab you will create a strategy pattern for sorting a collection of expression trees by their `evaluate()` value, which you will pair with a different containers to see how strategies can be paired different clients through an interface to create an easily extendable system. This lab requires a completed composite pattern from the previous lab, so you should begin by copying you or your partners code from the previous assignment into your new repo, making sure it compiles correctly, and running your tests to make sure everything is still functioning correctly.
 
 ## Container Classes
