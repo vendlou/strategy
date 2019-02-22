@@ -26,7 +26,8 @@ class Container {
         virtual void add_element(Base* element) = 0;
         // iterate through trees and output the expressions (use stringify())
         virtual void print() = 0;
-        // calls on the previously set sorting-algorithm. Checks if sort_function is not null, throw exception if otherwise
+        // calls on the previously set sorting-algorithm. Checks if sort_function is not
+        // null, throw exception if otherwise
         virtual void sort() = 0;
 
         /* Functions Needed to Sort */
@@ -56,7 +57,9 @@ class Sort {
 };
 ```
 
-Notice that your container class requires a reference to your sorting class (and vice-versa). This will require you to use [forward declarations](http://www.umich.edu/~eecs381/handouts/IncompleteDeclarations.pdf) and compile your classes as object files (which you should already be doing with CMake). You should test all the combinations of containers and sorting objects together using googletest. The following code serves as a basic test for using the SelectionSort class to sort a VectorContainer, but you should create a full test suite for each class and the appropriate class combinations.
+**Note:** your container class requires a reference to your sorting class and vice-versa, a situation known as a circular dependency. Due to the way the C++ compiler works, resolving circular dependencies will require you to use [forward declarations](http://www.umich.edu/~eecs381/handouts/IncompleteDeclarations.pdf) and compile your classes as object files by seperating the class declarations (header) from the class definitions (source) and adding the source files to your CMakeLists.txt. 
+
+You must test all the combinations of containers and sorting objects together using googletest. The following code serves as a basic test for using the SelectionSort class to sort a VectorContainer, but you should create a full test suite for each class and the appropriate class combinations.
 
 ## Unit Testing
 
@@ -116,4 +119,4 @@ TEST(SortTestSet, SelectionSortTest) {
 
 ## Submission
 
-To receive credit for this lab you must show an example program to your TA that demonstrates the full functionality of your classes along with the tests you have written for your different classes.
+To receive credit for this lab you must show an example program to your TA that demonstrates the full functionality of this pattern, including any interactions with other patterns. You must also show your TA the tests that you have created for validating that your classes are functioning correctly.
