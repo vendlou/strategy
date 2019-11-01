@@ -2,7 +2,7 @@
 #define __BASE_HPP__
 
 #include <string>
-
+#include <stdio.h>
 class Base {
     public:
         /* Constructors */

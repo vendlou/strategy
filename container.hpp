@@ -35,5 +35,8 @@ class Container {
         // return container size
         virtual int size() = 0;
 };
+void Container::set_sort_function(Sort* sort_function) {
+	this->sort_function = sort_function;
+}
 
 #endif //__CONTAINER_HPP__
