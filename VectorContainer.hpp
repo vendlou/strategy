@@ -1,7 +1,11 @@
+#ifndef __VECTORCONTAINER_HPP__
+#define __VECTORCONTAINER_HPP__
 #include <vector>
 #include "container.hpp"
 #include "bubble_sort.hpp"
 #include "selection_sort.hpp"
+#include <iostream>
+
 class VectorContainer :public Container {
 private:
 	std::vector<Base*> container;
@@ -12,6 +16,12 @@ public:
 	void swap(int, int);
 	Base* at(int);
 	int size();
+       // void set_sort_function(Sort* function){};
+        VectorContainer() {};
+
+        
+ 
+        
 };
 void VectorContainer::add_element(Base* element) {
 	container.push_back(element);
