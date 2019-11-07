@@ -170,17 +170,17 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
-# Target rules for targets named c-echo
+# Target rules for targets named lab
 
 # Build rule for target.
-c-echo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 c-echo
-.PHONY : c-echo
+lab: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab
+.PHONY : lab
 
 # fast build rule for target.
-c-echo/fast:
-	$(MAKE) -f CMakeFiles/c-echo.dir/build.make CMakeFiles/c-echo.dir/build
-.PHONY : c-echo/fast
+lab/fast:
+	$(MAKE) -f CMakeFiles/lab.dir/build.make CMakeFiles/lab.dir/build
+.PHONY : lab/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -240,7 +240,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/c-echo.dir/build.make CMakeFiles/c-echo.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/lab.dir/build.make CMakeFiles/lab.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -249,7 +249,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/c-echo.dir/build.make CMakeFiles/c-echo.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/lab.dir/build.make CMakeFiles/lab.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -258,7 +258,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/c-echo.dir/build.make CMakeFiles/c-echo.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/lab.dir/build.make CMakeFiles/lab.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 unit_test.o: unit_test.cpp.o
@@ -301,7 +301,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... c-echo"
+	@echo "... lab"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"

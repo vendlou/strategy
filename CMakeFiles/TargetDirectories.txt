@@ -5,7 +5,7 @@
 /home/csmajs/wlou901/lab-05/lab-05-strategy-pattern-new_lab5/CMakeFiles/rebuild_cache.dir
 /home/csmajs/wlou901/lab-05/lab-05-strategy-pattern-new_lab5/CMakeFiles/edit_cache.dir
 /home/csmajs/wlou901/lab-05/lab-05-strategy-pattern-new_lab5/CMakeFiles/test.dir
-/home/csmajs/wlou901/lab-05/lab-05-strategy-pattern-new_lab5/CMakeFiles/c-echo.dir
+/home/csmajs/wlou901/lab-05/lab-05-strategy-pattern-new_lab5/CMakeFiles/lab.dir
 /home/csmajs/wlou901/lab-05/lab-05-strategy-pattern-new_lab5/googletest/CMakeFiles/install/strip.dir
 /home/csmajs/wlou901/lab-05/lab-05-strategy-pattern-new_lab5/googletest/CMakeFiles/install/local.dir
 /home/csmajs/wlou901/lab-05/lab-05-strategy-pattern-new_lab5/googletest/CMakeFiles/install.dir

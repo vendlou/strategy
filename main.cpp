@@ -55,10 +55,10 @@ int main() {
 
     ListContainer* listct = new ListContainer();
     listct->set_sort_function(new SelectionSort());
-    listct->sort();
     listct->add_element(TreeA);
     listct->add_element(TreeB);
     listct->add_element(TreeC);
+    listct->sort();
     cout<<"ListContainer After:"<<endl;
     for(int i = 0;i < 3;i++) {
     	cout<<listct->at(i)->evaluate()<<"   ";
